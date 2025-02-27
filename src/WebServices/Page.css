@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+.webapp-container {
+    width: 100vw;
+    height: 85vh; /* Adjust height as needed */
+    background: #0056b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw; /* Adjust spacing */
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin: 0; 
+    position: relative;
+    right: 40px;
+}
+
+/* Remove unwanted body padding/margin */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100vw;
+    
+}
+
+  
+  /* Left text section */
+  .webapp-text-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  
+  .webapp-text-section p {
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    
+  }
+  
+  /* Button */
+  .webapp-button {
+    background: #007bff;
+    color: white;
+    width: 139.65px;
+    height: 42.5px;
+    gap: 6px;
+    border-radius: 6px;
+    padding: 11.25px 31px;
+  }
+  
+  .webapp-button:hover {
+    background: #00408a;
+  }
+  
+  /* Right Image Section */
+  .webapp-image-section {
+    width: 40%; /* Reduce width so it moves closer to text */
+    display: flex;
+    justify-content: flex-start; /* Aligns image to left */
+    align-items: center;
+  }
+  
+  .webapp-main-image {
+    width: 268.4314270019531px;
+    height: 359.13427734375px;
+    top: 126.87px;
+    left: 757.48px;
+    
+  }
+  .webapp-behind-image {
+    position: absolute;
+
+  
+  
+    z-index: 0; 
+    width: 172.82571411132812px;
+height: 356.682861328125px;
+top: 57px;
+left: 1025.17px;
+
+}
+  
+  /* Team Section */
+  .webapp-team {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .webapp-team-image {
+    width: 872px;
+    height: 379px;
+    position: relative;
+    
+    left: 174px;
+    
+  }
+  .iu{
+    
+        font-family: 'Outfit', sans-serif; /* Ensure Outfit font is loaded */
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 52.5px;
+        letter-spacing: -0.02em; /* Convert -2% to em (1% = 0.01em) */
+    
+  }
+  
+
+
+
+  /* Left Side Image */
+/* Left Side Images */
+.webapp-left-image {
+    position: absolute;
+    width: 120px; /* Adjust size */
+    height: auto;
+    object-fit: contain;
+    left: 1150px; /* Adjust based on layout */
+    transform: translateY(-50%);
+}
+
+/* Position adjustments for top, middle, and bottom */
+.webapp-left-image.top {
+    top: 45%; /* Moves the first line up */
+}
+
+.webapp-left-image.middle {
+    top: 50%; /* Centered */
+}
+
+.webapp-left-image.bottom {
+    top: 55%; /* Moves the last line down */
+}
+
+.webapp-left-image img {
+    width: 120px; /* Adjust size */
+    height: auto;
+    object-fit: contain;
+}
+
+

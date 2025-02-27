@@ -1,0 +1,86 @@
+/* New styles to avoid conflicts */
+.ps-container {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+    gap: 20px;
+  }
+  
+  /* Heading */
+  .ps-title {
+    width: 231;
+    height: 45;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.02em; /* -2% converted to em */
+    text-align: center;
+  }
+  
+  /* Paragraph */
+  .ps-description {
+    max-width: 546px;  /* Ensures the text wraps within this width */
+    height: auto;  /* Allows flexibility in height */
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; /* Increases line height for better readability */
+    letter-spacing: 0;
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 0 auto;  /* Centers the text block */
+    display: block;  /* Ensures it behaves as a block-level element */
+    white-space: normal; /* Ensures text wraps onto a new line */
+    position: relative;
+    bottom: 15px;
+}
+
+  
+  /* Grid for images */
+  .ps-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  /* Each card */
+  .ps-card {
+    width: 330px; /* Smaller divs */
+    height: 290px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add this to position YouTube icon */
+  }
+  
+  /* Images */
+  .ps-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Centered YouTube Icon */
+  .ps-youtube-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .ps-youtube {
+    width: 70px; /* Adjust size */
+    height: auto;
+   
+  }

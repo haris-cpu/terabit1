@@ -1,0 +1,79 @@
+.consultations-container {
+  text-align: center;
+  padding: 40px 20px;
+
+  top: 2259px;
+  left: 108px;
+
+  width: 1223.140869140625;
+  height: 492;
+  top: 2259px;
+  left: 108px;
+  gap: 46px;
+}
+
+.consultations-title {
+  font-family: "outfit", sans-serif;
+  padding-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 45px;
+  width: 463;
+  height: 45;
+  gap: 1.5px;
+}
+
+.consultations-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1223.140869140625;
+  height: 401;
+  gap: 16px;
+}
+
+.consultation-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 330px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.consultation-image {
+  width: 100%;
+  display: block;
+  border-radius: 0 0 10px 10px;
+
+  width: 397.0469665527344;
+  height: 401;
+}
+.haris {
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 25.01px;
+  line-height: 31.51px;
+  letter-spacing: 0%;
+}
+.consultation-content {
+  padding: 15px;
+}
+
+.consultation-content h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.target-text {
+  font-size: 14px;
+  color: #222020;
+}
+
+.flag-icon {
+  width: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+}

@@ -1,0 +1,13 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+.app-overlay {
+  position: fixed; /* Prevent affecting the main content */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}

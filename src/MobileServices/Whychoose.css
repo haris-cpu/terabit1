@@ -1,0 +1,131 @@
+/* Main Container */
+.why-container {
+    background-color: #f9fafb;
+    padding: 50px 20px;
+  }
+  
+  /* Content Layout */
+  .why-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .why-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Left Section */
+  .why-text-section {
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .why-text-section {
+      width: 45%;
+      text-align: left;
+      
+    }
+  }
+  
+  .why-text-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+  }
+  
+  .why-text-section p {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .why-pricing-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 172;
+height: 48;
+gap: 10px;
+border-radius: 10px;
+padding-top: 12px;
+padding-right: 30px;
+padding-bottom: 12px;
+padding-left: 30px;
+
+  }
+  
+  .why-pricing-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Right Section */
+  .why-features {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    bottom: 30px;
+    width: 846;
+height: 68;
+gap: 3px;
+
+  }
+  
+  
+  @media (min-width: 768px) {
+    .why-features {
+      width: 50%;
+      
+    
+    }
+  }
+  
+  .why-feature-item {
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .why-feature-item:nth-child(2),
+  .why-feature-item:nth-child(3) {
+    margin-left: 30px; /* Adjust the value as needed */
+  }
+  
+  .why-feature-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+  }
+  
+  .why-feature-item p {
+    color: #555;
+    font-size: 12px;
+    position: relative;
+    bottom: 15px;
+    left: 4px;
+  }
+  
+  /* Icon Image */
+  .why-icon img {
+    width: 35px;  /* Adjust the size as needed */
+    height: 35px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 55px;
+    top: 80px;
+   
+  }
+  

@@ -1,0 +1,167 @@
+.custom-features-container {
+    display: flex;
+    justify-content: space-around;
+   margin-left: 40px;
+    text-align: center;
+    
+    gap: 40px;
+  
+    
+    height: 334px;
+    width: 999px;
+  }
+  
+  .custom-feature-card {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  
+  
+  /* Arrow Image Styling */
+  .custom-arrow-image {
+    width: 746px;
+    height: 28px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  /* Feature Image Styling */
+  .custom-feature-image {
+    width: 72px;
+    height: 66px;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* A2 Image Styling (Below Each Icon) */
+  .custom-a2-image {
+    width: 10px; /* Adjust size as needed */
+    height: 49px;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .custom-feature-title {
+    font-family: 'Outfit', sans-serif; /* Ensure correct font loading */
+    font-weight: 500;
+    font-size: 17.33px;
+    line-height: 21.66px;
+    letter-spacing: -0.02em; /* Fix: Use 'em' instead of '%' */
+    text-align: center;
+  }
+  
+  .custom-feature-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-feature-point {
+    font-family: 'Outfit', sans-serif; /* Ensure font is loaded */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.5px;
+    letter-spacing: 0; /* Fix: CSS does not support % for letter-spacing */
+  }
+  .custom-checkmark {
+    width: 19px; /* Adjust based on your design */
+    height: 13px;
+    margin-right: 8px;
+  }
+
+
+  
+  @media (max-width: 786px) {
+   
+  
+    .custom-features-container {
+      display: flex;
+      flex-wrap: nowrap; /* Prevents wrapping */
+      justify-content: space-between; /* Distributes cards evenly */
+      align-items: flex-start;
+      text-align: center;
+      padding: 20px;
+      margin-top: 190px; /* Increased margin to prevent overlap */
+      height: auto;
+      overflow-x: hidden; /* Enables horizontal scrolling if needed */
+      -ms-overflow-style: none; /* Hides scrollbar in IE and Edge */
+      scrollbar-width: none; /* Hides scrollbar in Firefox */
+      gap: 10px; /* Minimized gap */
+      width: max-content;
+      /* min-width: 100%; */
+      overflow: hidden;
+      margin-left: auto; /* Centers container */
+      margin-right: auto; /* Centers container */
+      width: 100%; 
+    }
+  
+    .custom-feature-card {
+      flex: 1 1 auto; /* Maintain equal width */
+      width: 250px; /* Exact width to fit 3 cards in 786px */
+      max-width: 250px;
+      min-width: 250px;
+      padding: 15px;
+      min-height: 300px;
+      animation: scrollLoop 7s linear infinite;
+    }
+    @keyframes scrollLoop {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-150%); /* Adjusted to keep more cards visible */
+      }
+    }
+    
+    .custom-feature-image {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .custom-a2-image {
+      width: 8px;
+      height: 40px;
+    }
+  
+    .custom-feature-title {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .custom-feature-list {
+      padding: 8px 0;
+    }
+  
+    .custom-feature-point {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .custom-checkmark {
+      width: 14px;
+      height: 10px;
+      margin-right: 5px;
+    }
+  
+    /* Adjust arrow image */
+    .custom-arrow-image {
+      width: 263%;
+      max-width: 560px;
+      height: auto;
+      top: -15px;
+    }
+  }
+  

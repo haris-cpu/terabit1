@@ -1,0 +1,152 @@
+/* Main Container */
+.development-process {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    overflow: hidden; /* Hide horizontal scrollbar */
+    position: relative;
+}
+
+/* Section Heading */
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #222;
+     position: relative;
+     right: 330px;
+     top: 50px;
+}
+
+.heading span {
+    color: #007bff; /* Highlight color */
+}
+
+/* Scroll Wrapper */
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Scroll Container */
+.scroll-container {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    animation: scrollEffect 15s linear infinite; /* Smooth scrolling effect */
+    height: 476.33px;
+}
+
+/* Step Box */
+.process-step {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Even spacing */
+    min-width: 230px; /* Ensures equal width */
+    min-height: 280px; /* Reduced height */
+    transition: opacity 4s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Initially Hidden Steps */
+.process-step.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Step Number */
+.step-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+/* Step Title */
+.step-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #333;
+}
+
+/* Step Points (Bullet List) */
+.step-points {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.step-points .point {
+    font-size: 13px;
+    color: #555;
+    margin: 3px 0;
+}
+
+/* Step Image */
+.step-image {
+    width: 100%;
+    max-width: 160px;
+    max-height: 120px; /* Ensures uniform image size */
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+/* Keyframes for Continuous Scrolling */
+@keyframes scrollEffect {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .scroll-container {
+        animation: scrollEffect 10s linear infinite; /* Speed adjusted for mobile */
+       
+    }
+    .heading {
+        font-size: 24px; 
+        position: relative; 
+        z-index: 10; 
+        background: white; 
+        padding: 10px 0; 
+       position: relative;
+       right: 90px;
+    }
+
+    .development-process {
+        overflow: visible;
+    }
+    .process-step {
+        min-width: 200px;
+        min-height: 250px;
+        padding: 12px;
+    }
+    
+    .step-number {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+    
+    .step-title {
+        font-size: 14px;
+    }
+    
+    .step-points .point {
+        font-size: 12px;
+    }
+}

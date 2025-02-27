@@ -1,0 +1,160 @@
+.services-container {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  margin-top: 35px;
+  border-bottom: 0.001px solid rgb(186, 183, 183);
+  width: 1163;
+  height: 721;
+  top: 1378px;
+  left: 139px;
+  gap: 59px;
+}
+
+/* Header with Title & Button */
+.services-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.services-title {
+  font-family: "Outfit", sans-serif;
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -2%;
+
+  width: 1162.676513671875;
+  height: 106;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.services-description {
+  color: black;
+  margin-top: 10px;
+  text-align: left;
+  position: relative;
+  bottom: 15px;
+
+  font-family: "Proxima Nova", sans-serif;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  right: 50px;
+  border: 0.005px thik black;
+  width: 1163;
+  height: 556;
+  gap: 29.08px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 220px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Pricing Button */
+.pricing-button {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Blinking Green Dot */
+.green-dot {
+  width: 10px;
+  height: 10px;
+  background-color: limegreen;
+  border-radius: 50%;
+  margin-right: 12px;
+  animation: blink 1s infinite;
+}
+
+/* Blinking Animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and title */
+}
+
+.service-icon {
+  width: 25px; /* Adjust size as needed */
+  height: 25px;
+}
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing between arrow and text */
+}
+
+.service-arrow {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+}
+
+

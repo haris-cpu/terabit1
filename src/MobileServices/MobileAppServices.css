@@ -1,0 +1,251 @@
+/* Import Outfit Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+/* Main Container */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.mobile-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: white;
+    width: 100%;
+    position: relative;
+    top: 40px;
+}
+
+@media (min-width: 768px) {
+    .mobile-services {
+        flex-direction: row;
+    }
+}
+
+/* Left Section - Text Container */
+.text-container {
+    max-width: 50%;
+}
+
+h2, h3 {
+    font-family: 'Outfit', sans-serif;
+}
+
+.title {
+    
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    right: 90px;
+    font-size: 40px;
+    text-align: justify;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 90px;
+    margin-bottom: 80px;
+}
+
+.title span {
+    color: #007bff;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.description {
+    color: #000000E5;
+    margin-top: 10px;
+    font-size: 16.95px;
+    text-align: justify;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.service-list {
+    margin-top: 20px;
+}
+
+.service-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.service-icon img {
+    width: 50px;
+    height: 74px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: 20px;
+    top: 5px;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+.service-text {
+    font-size: 16.95px;
+    color: #000000E5;
+    font-family: 'Outfit', sans-serif;
+    line-height: 21.36px;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 558px;
+    position: relative;
+    top: 100px;
+}
+
+.mobile-mockup {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.mobile-mockup.visible {
+    opacity: 1;
+}
+
+.mobile-mockup.hidden {
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mobile-services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-container {
+        max-width: 80%;
+        text-align: center;
+    }
+    .title {
+        font-size: 28px;
+        bottom: 50px;
+    }
+    .image-container {
+        top: 50px;
+        height: 400px;
+    }
+    .mobile-mockup {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        max-width: 90%;
+        margin-right: 80px;
+    }
+    .title {
+        font-size: 26px;
+        bottom: 30px;
+        
+    }
+    .description {
+        font-size: 14px;
+    }
+    .haris1{
+        position: relative;
+        left: 60px;
+        bottom: 25px;
+        width: 200px;
+        text-overflow: ellipsis; 
+        font-size: 15px; 
+        text-align: center;
+    }
+    
+    .service-icon{
+       position: relative;
+       right: 235px;
+       top: 27px;
+    }
+    .service-title{
+        font-size: 15.3px;
+        position: relative;
+        right: 70px;
+    }
+    .service-text{
+        width: 210px;
+        font-size: 13px;
+        text-align: justify;
+        line-height: 1.1;
+        position: relative;
+        bottom: 8px;
+        right: 79px;
+    }
+    .service-item{
+        margin-bottom: -20px;
+        margin-left: 180px;
+    }
+    .service-list{
+        position: relative;
+        bottom: 70px;
+    }
+    .image-container {
+        top: 30px;
+        height: 700px;
+        margin-right: 39px;
+       
+
+    }
+    .mobile-mockup {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        max-width: 95%;
+    }
+    .title {
+        font-size: 22px;
+        bottom: 20px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .service-icon img {
+        right: 0;
+       
+    }
+    .image-container {
+        top: 20px;
+        height: 300px;
+    }
+    .mobile-mockup {
+        width: 180px;
+    }
+}

@@ -1,0 +1,227 @@
+.navbar {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 75px;
+  border-bottom: 0.001px solid rgb(186, 183, 183);
+  padding-bottom: 10px;
+  padding-right: 10px;
+  overflow: hidden; /* Add this to hide overflow */
+}
+
+/* Flex container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* Logo */
+.logo-image {
+  height: 19pxpx; 
+  width: 174px;
+  padding-left: 26px;
+  position: relative;
+  bottom: 3px;
+  left: 10px;
+}
+.request-btn a {
+  color: white; /* Ensures the link inside the button is also white */
+  text-decoration: none;
+}
+.request-btn {
+  background-color: #007bff; /* Adjust button background color if needed */
+  color: white; /* Set text color to white */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Menu Items */
+.menu {
+  display: flex;
+  gap: 24px;
+  padding-top: 13px;
+  padding-bottom: 100px;
+  padding-left: 1px;
+  position: relative;
+}
+
+.menu-item {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  list-style-type: none;
+  font-weight: bold;
+}
+/* Header.css */
+.menu-link {
+  color: black;
+  text-decoration: none; /* Optional: Removes underline */
+}
+
+.menu-item:hover {
+  color: #007bff;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Adjust this value to align with the logo */
+  top: 20px; /* Adjust this value to align vertically */
+}
+
+/* Icon */
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Request Pricing Button */
+.request-btn {
+  background-color: #2e7dd2;
+  color: white;
+  border: none;
+  padding: 10px 23px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: -30px;
+  position: relative;
+  top: -30px;
+}
+/* Remove underline from links (menu items) */
+.menu-link {
+  text-decoration: none; /* Removes the underline */
+  font-family: Outfit;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+
+}
+
+/* Optional: You can also customize the hover effect if needed */
+.menu-link:hover {
+  text-decoration: none; /* Ensures no underline on hover */
+}
+
+
+
+/* Modal Styles */
+.services-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  
+}
+
+.services-modal-content {
+  background-color: white;
+  padding: 20px;
+  
+  border-radius: 8%;
+  width: 75%; /* Reduced width */
+  max-width: 320px; /* Reduced max width */
+  position: relative;
+}
+
+.services-modal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-modal-content li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.services-modal-content li:last-child {
+  border-bottom: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #888; /* Keep the same color */
+  background: none; /* Ensures no background appears */
+  outline: none; /* Ensures no focus outline appears */
+  box-shadow: none; /* Removes any possible box-shadow */
+}
+
+.service-link {
+  text-decoration: none;
+  color: black; /* Changed to black */
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.service-link:hover {
+  color: #333; /* Darker shade on hover */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background-color: white;
+    padding-top: 20px;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Add this to hide overflow */
+  }
+
+  .menu.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .menu-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    right: 20px; /* Adjust this value to align with the logo */
+    top: 20px; /* Adjust this value to align vertically */
+  }
+
+  .request-btn {
+    display: none;
+  }
+}

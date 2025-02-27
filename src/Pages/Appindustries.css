@@ -1,0 +1,165 @@
+.industries-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+   
+  }
+  button:hover,
+  .industries-tab:hover,
+  .learn-more:hover {
+      color: blue;  
+      font-weight: bold;
+      background: inherit;
+      border: none;
+      font-weight: normal;
+  }
+  
+  .industries-title {
+    width: 226;
+    height: 45;
+    font-family: 'Outfit', sans-serif; /* Use Outfit font */
+    font-weight: 600; /* Semi-bold */
+    font-size: 36px; /* Font size */
+    line-height: 45px; /* Space between lines */
+    letter-spacing: -0.02em;
+  }
+  
+  .industries-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .industries-tab {
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+    transition: 0.3s;
+  }
+  
+  .industries-tab.active {
+    color: blue;
+    font-weight: bold;
+    border-bottom: 2px solid blue;
+  }
+  
+  .industries-apps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .app-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 370px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .app-image {
+    width: 100%;
+    height: 235px; /* Default height */
+    
+    object-fit: cover;
+  }
+  
+  .app-image[src*="A2.png"],
+  .app-image[src*="A3.png"] {
+    height: 250px; /* Increase height */
+  
+  }
+  
+  
+  .app-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
+  }
+  
+  .learn-more {
+    font-size: 16px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  /* Unique Overlay Styles */
+.app-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Overlay Box */
+.app-overlay-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+/* Image on the Left */
+.app-overlay-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.app-overlay-image {
+  width: 100%;
+  
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+/* Close Button */
+.app-overlay-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+  z-index: 1000; /* Ensure it's above everything */
+}
+body {
+  overflow-x: hidden;
+}
+
+
+

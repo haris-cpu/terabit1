@@ -1,0 +1,195 @@
+.request-pricing-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+  .pricing-header-container {
+    text-align: center;
+    width: 145%;
+   position: relative;
+   bottom: 40px;
+   right: 350px;
+
+
+  }
+  
+  .pricing-form-container {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .pricing-form-container h2 {
+    font-size: 24px;
+  }
+  
+  .pricing-form-container p {
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: blue;
+    color:white;
+  }
+  
+  .pricing-info-container {
+    flex: 1;
+    
+    width: 437px;
+    height: 463px;
+    gap: 19px;
+  }
+  
+  .pricing-info-container img {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .chat-now-btn {
+    background: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    margin-right: 360px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    height: 38px;
+    width: 118.5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  /* Blinking Green Dot */
+  .blinking-dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(151, 224, 151);
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: blink 1s infinite alternate;
+  }
+  
+  /* Blinking Animation */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  
+  
+  
+
+
+  @media (max-width: 768px) {
+    .request-pricing-wrapper {
+      flex-direction: column; /* Stack the form and info container vertically */
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .pricing-header-container {
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+    }
+  
+    .pricing-info-container {
+      text-align: center;
+      position: relative;
+      right: 0;
+    }
+  
+    .pricing-form-container {
+      width: 100%; /* Make form container take up full width */
+    }
+  
+    form {
+      width: 100%;
+      gap: 15px;
+    }
+  
+    input,
+    textarea {
+      width: 100%; /* Make inputs and textarea responsive */
+    }
+  
+    button {
+      width: 100%; /* Make the button fill the container */
+    }
+  
+    .pricing-info-container img {
+      width: 100%;
+      max-width: 250px; /* Adjust image size for smaller screens */
+    }
+  
+    .chat-now-btn {
+      width: 100%; /* Make the chat button fill the container */
+    }
+  }
+  
+  /* Styles for mobile devices */
+  @media (max-width: 480px) {
+    .pricing-header-container h2 {
+      font-size: 28px; /* Adjust font size for smaller screens */
+    }
+  
+    .pricing-form-container h2 {
+      font-size: 20px; /* Adjust header font size */
+    }
+  
+    .pricing-form-container p {
+      font-size: 14px; /* Adjust paragraph font size */
+    }
+  
+    input,
+    textarea {
+      padding: 12px; /* Increase padding for better readability */
+    }
+  
+    button {
+      font-size: 16px; /* Adjust button font size */
+    }
+  }
+ 
