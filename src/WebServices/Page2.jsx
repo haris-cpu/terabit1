@@ -4,9 +4,9 @@ import "./Page2.css";
 const WebAppServices = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "/wadev/W1.png",
-    "/wadev/W2.png",
-    "/wadev/W3.png"
+    "/webimg/tv1.png",
+    "/webimg/tv2.png",
+    "/webimg/tv3.png"
   ];
 
   useEffect(() => {
