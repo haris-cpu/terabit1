@@ -3,7 +3,7 @@ import "./HeroSection.css"; // Import the CSS file for this component
 import profilePic from "../assets/Ceo.png"; // Profile image of the CEO
 import fiverrLogo from "../assets/fiverlogo.png"; // Fiverr logo
 import upworkLogo from "../assets/upq.png"; // Upwork logo
-import ioVideo from "../assets/io.mp4";
+import ioVideo from "../assets/tf.mp4";
 
 const HeroSection = () => {
   return (

@@ -17,6 +17,7 @@ html, body {
     width: 100%;
     position: relative;
     margin-top: 80px;
+    height: 600px;
 }
 
 /* Left Section - Text Container */

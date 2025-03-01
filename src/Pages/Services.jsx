@@ -16,27 +16,48 @@ const services = [
       <div
         className="hover-content"
         style={{
-          backgroundColor: "#f7fbff",
+          backgroundColor: "#008DF30D",
           borderRadius: "10px",
-          padding: "20px",
-          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          
+          
           border: "1px solid #007bff",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          height:'259px',
+          width:'315px',
+          position:'relative',
+          bottom:'20px',
+          right:'20px'
         }}
       >
-        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1" }}>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  High-quality apps for iOS</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Boost app visibility</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  User-focused app design</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Apps for any platform</li>
-          <li style={{ fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Efficient Android solutions</li>
-        </ul>
+      <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1", textAlign: "left" }}>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    High-quality apps for iOS
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Boost app visibility
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    User-focused app design
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Apps for any platform
+  </li>
+  <li style={{ fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Efficient Android solutions
+  </li>
+</ul>
+
         <img
-          src="/serviceimages/mobile.png"
+          src="/serviceimages/o3.png"
           alt="Hover Content"
-          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'100px' }}
+          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'10px' }}
         />
       </div>
     ),
@@ -55,27 +76,48 @@ const services = [
       <div
         className="hover-content"
         style={{
-          backgroundColor: "#f7fbff",
+          backgroundColor: "#008DF30D",
           borderRadius: "10px",
-          padding: "20px",
-          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          
+          
           border: "1px solid #007bff",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          height:'259px',
+          width:'315px',
+          position:'relative',
+          bottom:'20px',
+          right:'20px'
         }}
       >
-        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1" }}>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> Powerful web apps</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Custom CMS solutions</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Advanced e-commerce systems</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Scalable web applications</li>
-          <li style={{ fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Optimized for performance</li>
-        </ul>
+        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1", textAlign: "left" }}>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Powerful web apps
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Custom CMS solutions
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Advanced e-commerce systems
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Scalable web applications
+  </li>
+  <li style={{ fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Optimized for performance
+  </li>
+</ul>
+
         <img
-          src="/serviceimages/mobile.png"
+          src="/serviceimages/05.png"
           alt="Hover Content"
-          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'100px'  }}
+          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'14px'  }}
         />
       </div>
     ),
@@ -94,27 +136,48 @@ const services = [
       <div
         className="hover-content"
         style={{
-          backgroundColor: "#f7fbff",
+          backgroundColor: "#008DF30D",
           borderRadius: "10px",
-          padding: "20px",
-          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          
+          
           border: "1px solid #007bff",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          height:'259px',
+          width:'315px',
+          position:'relative',
+          bottom:'20px',
+          right:'20px'
         }}
       >
-        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1" }}>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> Intuitive UI design</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> Seamless user experience</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Wireframing & prototyping</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Responsive and adaptive design</li>
-          <li style={{ fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Interactive and engaging visuals</li>
-        </ul>
+        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1", textAlign: "left" }}>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Intuitive UI design
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Seamless user experience
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Wireframing & prototyping
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Responsive and adaptive design
+  </li>
+  <li style={{ fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Interactive and engaging visuals
+  </li>
+</ul>
+
         <img
-          src="/serviceimages/UI.png"
+          src="/serviceimages/o3.png"
           alt="Hover Content"
-          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'100px'  }}
+          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'14px'  }}
         />
       </div>
     ),
@@ -133,28 +196,48 @@ const services = [
       <div
         className="hover-content"
         style={{
-          backgroundColor: "#f7fbff",
+          backgroundColor: "#008DF30D",
           borderRadius: "10px",
-          padding: "20px",
-          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          
+          
           border: "1px solid #007bff",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          height:'259px',
+          width:'315px',
+          position:'relative',
+          bottom:'20px',
+          right:'20px'
         }}
       >
-        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1" }}>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> CI/CD pipeline automation</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Infrastructure as Code (IaC)</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Cloud deployment & management</li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Continuous monitoring & logging
-          </li>
-          <li style={{ fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Scalable & secure architectures</li>
-        </ul>
+       <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1", textAlign: "left" }}>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    CI/CD pipeline automation
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Infrastructure as Code (IaC)
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Cloud deployment & management
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Continuous monitoring & logging
+  </li>
+  <li style={{ fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Scalable & secure architectures
+  </li>
+</ul>
+
         <img
-          src="/serviceimages/Devops.png"
+          src="/serviceimages/02.png"
           alt="Hover Content"
-          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'100px'  }}
+          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'14px'  }}
         />
       </div>
     ),
@@ -173,31 +256,48 @@ const services = [
       <div
         className="hover-content"
         style={{
-          backgroundColor: "#f7fbff",
+          backgroundColor: "#008DF30D",
           borderRadius: "10px",
-          padding: "20px",
-          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          
+          
           border: "1px solid #007bff",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          height:'259px',
+          width:'315px',
+          position:'relative',
+          bottom:'20px',
+          right:'20px'
         }}
       >
-        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1" }}>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> Smart contract development
-          </li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> Decentralized applications (DApps)
-          </li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Blockchain integration & consulting
-          </li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Private & public blockchain solutions
-          </li>
-          <li style={{ fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Optimized for performance</li>
-        </ul>
+       <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1", textAlign: "left" }}>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Smart contract development
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Decentralized applications (DApps)
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Blockchain integration & consulting
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Private & public blockchain solutions
+  </li>
+  <li style={{ fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Optimized for performance
+  </li>
+</ul>
+
         <img
-          src="/serviceimages/blockchain.png"
+          src="/serviceimages/o1.png"
           alt="Hover Content"
-          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'100px'  }}
+          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'14px'  }}
         />
       </div>
     ),
@@ -216,30 +316,48 @@ const services = [
       <div
         className="hover-content"
         style={{
-          backgroundColor: "#f7fbff",
+          backgroundColor: "#008DF30D",
           borderRadius: "10px",
-          padding: "20px",
-          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+          
+          
           border: "1px solid #007bff",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          height:'259px',
+          width:'315px',
+          position:'relative',
+          bottom:'20px',
+          right:'20px'
         }}
       >
-        <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1" }}>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> AI-powered solutions & automation
-          </li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Machine learning model development
-          </li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img> Natural language processing (NLP)
-          </li>
-          <li style={{ marginBottom: "10px", fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Scalable web applications</li>
-          <li style={{ fontWeight: "500" }}><img src="/serviceimages/arrow.png" style={{width: "16px", height: "16px", marginRight: "5px"}}></img>  Optimized for performance</li>
-        </ul>
+       <ul style={{ listStyle: "none", padding: "0", margin: "0", flex: "1", textAlign: "left" }}>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    AI-powered solutions & automation
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Machine learning model development
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Natural language processing (NLP)
+  </li>
+  <li style={{ marginBottom: "10px", fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Scalable web applications
+  </li>
+  <li style={{ fontWeight: "500", display: "flex", alignItems: "center" }}>
+    <img src="/serviceimages/arrow.png" style={{ width: "16px", height: "16px", marginRight: "5px" }} />
+    Optimized for performance
+  </li>
+</ul>
+
         <img
-          src="/serviceimages/AI.png"
+          src="/serviceimages/o4.png"
           alt="Hover Content"
-          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'100px'  }}
+          style={{ width: "100px", height: "100px", objectFit: "contain",paddingBottom:'14px'  }}
         />
       </div>
     ),

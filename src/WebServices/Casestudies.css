@@ -1,0 +1,76 @@
+.case-studies-section {
+    text-align: center;
+    padding: 40px 20px;
+    width: 1434px;
+    height: 470px;
+    position: relative;
+    right: 150px;
+    bottom: 30px;
+  }
+  
+  .case-studies-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .case-studies-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    
+  }
+  
+  .case-study-card {
+    width: 370px;
+    height: 340px;
+    background: #fff;
+    border-radius: 12px;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  
+  .case-study-image {
+    width: 370px;
+    border-radius: 10px;
+  }
+  
+  .case-study-title {
+    width: 282px;
+    height: 15px;
+    margin-left: 20px;
+    font-family: "Outfit", sans-serif;  /* Ensure Outfit font is loaded */
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27.72px;
+  letter-spacing: 0;
+  }
+  
+ 
+  
+  .case-study-button {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 104.8px;
+    height: 24px;
+    margin-right: 250px;
+  
+    background: none;  /* Removes background color */
+   
+    color: #007bff; /* Makes the text blue */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+

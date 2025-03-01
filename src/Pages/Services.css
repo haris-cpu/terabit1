@@ -74,9 +74,7 @@
   height: 220px;
 }
 
-.service-card:hover {
-  transform: scale(1.05);
-}
+
 
 .service-title {
   font-size: 18px;

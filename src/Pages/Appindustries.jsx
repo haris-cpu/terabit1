@@ -6,7 +6,7 @@ const industries = ["E-Commerce", "EdTech", "Manufacturing", "Healthcare", "Educ
 const apps = {
   "E-Commerce": [
     { name: "Bunndy Mobile App", image: "Appindustry/A1.png", link: "#" },
-    { name: "Midza App", image: "Appindustry/A2.png", link: "#" },
+    { name: "Midza App", image: "Appindustry/A2.png", link: "#"  },
     { name: "A.A Beauty App", image: "Appindustry/A3.png", link: "#" },
   ],
   "EdTech": [

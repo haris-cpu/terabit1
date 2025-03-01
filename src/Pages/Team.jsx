@@ -76,6 +76,8 @@ const TeamProfile = () => {
     }
   };
 
+  
+
   return (
     <div className="container">
       <div className="left-section">

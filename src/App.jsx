@@ -27,21 +27,27 @@ import HowWeWork from "./MobileServices/hww";
 import FAQSection from "./MobileServices/FAQ";
 import WebAppSection from "./WebServices/page";
 import WebAppServices from "./WebServices/Page2";
+import CaseStudies from "./WebServices/Casestudies";
+import ThreeDivs from "./WebServices/Casestudies";
 
-// Scroll to section when navigating
 const ScrollToSection = () => {
   const location = useLocation();
   useEffect(() => {
-    // Determine the section ID based on the route
     const sectionId =
       location.pathname === "/" ? "home" : location.pathname.substring(1);
     const section = document.getElementById(sectionId);
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const navbarHeight = document.querySelector(".navbar")?.offsetHeight || 80; // Adjust based on navbar height
+      const yOffset = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+      window.scrollTo({ top: yOffset, behavior: "smooth" });
     }
   }, [location]);
+
   return null;
 };
+
 
 // Layout component, always visible
 const Layout = ({ children }) => {
@@ -131,6 +137,9 @@ function App() {
     <Layout>
       <WebAppSection/>
       <WebAppServices/>
+      <DevelopmentProcess/>
+      <WhyChooseUs/>
+      <ThreeDivs/>
     </Layout>
   }
 />
