@@ -104,7 +104,7 @@ const TeamProfile = () => {
             </div>
           </div>
           <div className="stat-item">
-            <img src="/images/f.png" alt="Fiverr" className="stat-icon" style={{width:'55px'}} />
+            <img src="/images/f.png" alt="Fiverr" className="stat-icon" style={{width:'59px'}} />
             <div>
               <p className="stat-value" style={{position:'relative',top:'10px'}}>1800+ Orders Completed</p>
             </div>

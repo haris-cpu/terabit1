@@ -73,4 +73,41 @@
     transition: all 0.3s ease-in-out;
 }
 
+.case-study-button:hover {
+  background: none !important; /* Ensures no background appears */
+  color: #0056b3; /* Optional: Slightly darker blue on hover */
+}
+
+/* Prevent outline when clicking */
+.case-study-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.pdf-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.pdf-viewer {
+  width: 60vw;
+  height: 100vh;
+  border: none;
+  background: white;
+  cursor: pointer; /* Clicking closes the PDF */
+  overflow: hidden;
+  display: block;
+  transform: scale(1); /* Prevents resizing issues */
+  
+}
 

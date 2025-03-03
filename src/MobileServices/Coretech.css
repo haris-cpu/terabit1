@@ -1,0 +1,277 @@
+/* NewCoreTechnologies.css */
+
+.new-core-tech-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  
+  .new-core-tech-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1d2939;
+    font-family: "Outfit", sans-serif;
+    position: relative;
+    top: 50px;
+    letter-spacing: -2%;
+    line-height: 53.5px;
+  }
+  
+  .new-core-tech-description {
+    color: #1d2939;
+    max-width: 600px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  
+  .new-core-tech-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fc;
+    border-radius: 30px;
+    padding: 8px;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 65%;
+    max-width: 1100px;
+    margin-top: 45PX;
+  }
+  
+  .new-core-tech-tab {
+    position: relative;
+    border: none;
+    background: transparent !important;
+    font-size: 18px;
+    color: #1d2939;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: color 0.3s ease;
+    outline: none;
+    min-width: 110px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 1px;
+  }
+  
+  .new-core-tech-tab::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.1px;
+    height: 30px;
+    background-color: #EAECF0;
+  }
+  
+  .new-core-tech-tab:last-child::after {
+    display: none;
+  }
+  
+  .new-core-tech-tab:hover {
+    color: #007bff;
+    background: transparent !important;
+  }
+  
+  .new-core-tech-tab.new-core-tech-active {
+    color: #007bff;
+    font-weight: bold;
+    background: transparent !important;
+  }
+  
+  .new-core-tech-icons-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    gap: 13px;
+    padding: 10px;
+    max-width:100%;
+    white-space: nowrap;
+  scroll-behavior: smooth;
+  margin-top: 30px;
+}
+
+.new-core-tech-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100px;
+  min-width: 110px;
+}
+
+.new-core-tech-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.new-core-tech-icons-container::-webkit-scrollbar {
+  display: none;
+}
+
+.new-core-tech-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .new-core-tech-container {
+    padding: 30px;
+  }
+
+  .new-core-tech-title {
+    font-size: 38px;
+    top: 30px;
+  }
+
+  .new-core-tech-icons-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .new-core-tech-container {
+    padding: 20px;
+    gap: 15px;
+    position: relative;
+    bottom: 110px;
+  }
+
+  .new-core-tech-title {
+    font-size: 32px;
+    top: 20px;
+  }
+
+  .new-core-tech-description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .new-core-tech-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .new-core-tech-tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .new-core-tech-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .new-core-tech-tab {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    min-width: 120px;
+    flex-shrink: 0;
+  }
+
+  .new-core-tech-icons-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .new-core-tech-icons-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .new-core-tech-card {
+    flex: 0 0 auto;
+    width: 100px;
+    max-width: 120px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .new-core-tech-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  @keyframes autoScroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(30%);
+    }
+  }
+
+  .new-core-tech-icons-container {
+    animation: autoScroll 6s linear infinite alternate;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-core-tech-title {
+    font-size: 28px;
+  }
+
+  .new-core-tech-description {
+    font-size: 13px;
+  }
+
+  .new-core-tech-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-core-tech-tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .new-core-tech-icons-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .new-core-tech-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .new-core-tech-icons-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .new-core-tech-tab {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

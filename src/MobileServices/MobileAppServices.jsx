@@ -10,12 +10,18 @@ const MobileAppServices = () => {
   ];
 
   useEffect(() => {
+    // Preload images
+    images.forEach(img => {
+        const image = new Image();
+        image.src = img;
+    });
+
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 1000); 
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+}, [images]); // Added images as dependency array.
 
   return (
     <section className="mobile-services">
@@ -74,15 +80,15 @@ const MobileAppServices = () => {
 
       {/* Right Side - Mobile Mockup with Auto-Scroll */}
       <div className="image-container">
-        {images.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt={`Mockup ${index + 1}`}
-            className={`mobile-mockup ${index === currentIndex ? "visible" : "hidden"}`}
-          />
-        ))}
-      </div>
+                {images.map((img, index) => (
+                    <img
+                        key={index}
+                        src={img}
+                        alt={`Mockup ${index + 1}`}
+                        className={`mobile-mockup ${index === currentIndex ? "active" : "inactive"}`}
+                    />
+                ))}
+            </div>
     </section>
   );
 };

@@ -2,7 +2,7 @@
 .development-process {
     background: white;
     padding: 40px 20px;
-    text-align: center;
+    text-align: left;
     overflow: hidden; /* Hide horizontal scrollbar */
     position: relative;
 }
@@ -13,13 +13,13 @@
     font-weight: bold;
     margin-bottom: 30px;
     color: #222;
-     position: relative;
-     right: 330px;
-     top: 50px;
+    position: relative;
+    left: 0;
+    top: 50px;
 }
 
 .heading span {
-    color: #007bff; /* Highlight color */
+    color: #007bff;
 }
 
 /* Scroll Wrapper */
@@ -32,10 +32,10 @@
 /* Scroll Container */
 .scroll-container {
     display: flex;
-    gap: 25px;
     width: max-content;
-    animation: scrollEffect 15s linear infinite; /* Smooth scrolling effect */
-    height: 476.33px;
+    animation: scrollEffect 15s linear infinite;
+    height: 500px; /* Increased height for better spacing */
+   
 }
 
 /* Step Box */
@@ -46,11 +46,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between; /* Even spacing */
-    min-width: 230px; /* Ensures equal width */
-    min-height: 280px; /* Reduced height */
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 260px;
+    height: 374px; /* Increased height */
     transition: opacity 4s ease-in-out, transform 1s ease-in-out;
+    margin: 0;
 }
 
 /* Initially Hidden Steps */
@@ -61,45 +62,55 @@
 
 /* Step Number */
 .step-number {
-    font-size: 20px;
-    font-weight: bold;
-    color: #007bff;
-    background: rgba(0, 123, 255, 0.1);
+    font-family: 'Proxima Nova', sans-serif; 
+    font-weight: 400; 
+    font-size: 26px; 
+    line-height: 31.46px; 
+    letter-spacing: 0%;
     padding: 8px 12px;
     border-radius: 50%;
     margin-bottom: 8px;
+    color: #1E1D28;
 }
 
 /* Step Title */
 .step-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
-    text-align: center;
-    color: #333;
+    font-family: 'Outfit', sans-serif; /* Apply Outfit font */
+    font-weight: 600; /* Semi-bold */
+    font-size: 20px; /* Text size */
+    line-height: 24.2px; /* Space between lines */
+    letter-spacing: 0%; /* No extra spacing between letters */
+    color: #1E1D28;
 }
+.points{
+    width: 6.999999880200103px;
+height: 6.999999880200103px;
+color: #008DF3;
+border-radius: 2px;
 
+}
 /* Step Points (Bullet List) */
 .step-points {
     list-style: none;
     padding: 0;
     margin: 5px 0;
-    text-align: center;
+    font-family: 'Proxima Nova', sans-serif; /* Apply Proxima Nova font */
+    font-weight: 400; /* Regular */
+    font-size: 14px; /* Text size */
+    line-height: 16.94px; /* Space between lines */
+    letter-spacing: 0%; /* No extra spacing between letters */
+    color: #1E1D28;
 }
 
-.step-points .point {
-    font-size: 13px;
-    color: #555;
-    margin: 3px 0;
-}
+
 
 /* Step Image */
 .step-image {
     width: 100%;
-    max-width: 160px;
-    max-height: 120px; /* Ensures uniform image size */
-    object-fit: contain;
-    margin-top: 5px;
+    max-width: 180px;
+    height: 214px;
+    object-fit: contain; /* Ensures it fits inside */
+    margin-top: auto;
 }
 
 /* Keyframes for Continuous Scrolling */
@@ -115,8 +126,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .scroll-container {
-        animation: scrollEffect 10s linear infinite; /* Speed adjusted for mobile */
-       
+        animation: scrollEffect 10s linear infinite;
     }
     .heading {
         font-size: 24px; 
@@ -124,29 +134,28 @@
         z-index: 10; 
         background: white; 
         padding: 10px 0; 
-       position: relative;
-       right: 90px;
+        left: 0;
     }
-
     .development-process {
         overflow: visible;
     }
     .process-step {
-        min-width: 200px;
-        min-height: 250px;
+        width: 200px;
+        height: 290px; /* Adjusted height for mobile */
         padding: 12px;
     }
-    
     .step-number {
         font-size: 18px;
         padding: 6px 10px;
     }
-    
     .step-title {
         font-size: 14px;
     }
-    
     .step-points .point {
         font-size: 12px;
+    }
+    .step-image {
+        max-width: 160px; /* Smaller image for mobile */
+        max-height: 140px; /* Adjusted for better fit */
     }
 }

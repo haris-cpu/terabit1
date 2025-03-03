@@ -29,6 +29,8 @@ import WebAppSection from "./WebServices/page";
 import WebAppServices from "./WebServices/Page2";
 import CaseStudies from "./WebServices/Casestudies";
 import ThreeDivs from "./WebServices/Casestudies";
+import NewCoreTechnologies from "./MobileServices/Coretech";
+import NewCoreTechnologies2 from "./WebServices/Coretech2";
 
 const ScrollToSection = () => {
   const location = useLocation();
@@ -116,7 +118,7 @@ function App() {
               <MobileAppServices />
               <DevelopmentProcess />
               <WhyChooseUs />
-              <CoreTechnologies />
+              <NewCoreTechnologies/>
               <GuaranteedGains />
               <FeaturesSection />
               <HowWeWork />
@@ -140,6 +142,18 @@ function App() {
       <DevelopmentProcess/>
       <WhyChooseUs/>
       <ThreeDivs/>
+      <NewCoreTechnologies2/>
+      <GuaranteedGains/>
+      <FeaturesSection/>
+      <HowWeWork/>
+      <SuccessStories/>
+      <AppIndustries/>
+      <TeamProfile/>
+     <PS/>
+     <FAQSection/>
+     <RequestPricing/>
+
+
     </Layout>
   }
 />

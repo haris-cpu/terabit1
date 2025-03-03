@@ -93,26 +93,60 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   margin-right: 10px;
-}
-
-.chat-btn {
-  background: #007bff;
-  color: white;
-  height: "53.3px";
-  gap: "8px";
+  transition: none !important; /* Remove any transition effect */
+  background: #007bff;  /* Keep original background */
+  color: white; /* Keep original text color */
   width: 192.35px;
-  height: 53.3px;  
+  height: 53.3px;
+  border: 2px solid transparent; /* Avoid border flickering */
+  outline: none !important; /* Remove focus outline */
 }
 
+/* Call button with its original styles */
 .call-btn {
   background: white;
   border: 2px solid #007bff;
   color: #007bff;
-  height: "53.3px";
-  gap: "8px";
-  width: 192.35px;
-  height: 53.3px;  
 }
+
+/* Prevent any hover, focus, or click effects */
+.chat-btn:hover,
+
+.chat-btn:focus,
+
+.chat-btn:active
+ {
+  color: white;
+  background: #007bff; 
+ 
+  border: inherit !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
+  pointer-events: auto; /* Ensure button remains clickable */
+}
+
+.call-btn:hover,
+
+.call-btn:focus,
+
+.call-btn:active
+ {
+  color: #007bff;
+  background: white; 
+  border:2px solid #007bff ;
+ 
+ 
+  outline: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
+  pointer-events: auto; /* Ensure button remains clickable */
+}
+
+
+
 
 .image-section {
   width: 520px; 

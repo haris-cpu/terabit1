@@ -109,13 +109,12 @@ html, body {
 .web-image-container {
     width: 558px;
     height: 831px;
+    overflow: hidden;
+    position: relative;
+    right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    
-    position: relative;
-    bottom: 100px;
 }
 
 .web-mockup {
@@ -125,17 +124,23 @@ html, body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    top: 259px;
+    transform: translateX(-50%); 
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
 }
 
-.web-mockup.visible {
+.web-mockup.active {
     opacity: 1;
+    opacity: 1;
+    transform: translateX(0); 
 }
 
-.web-mockup.hidden {
+.web-mockup.inactive {
     opacity: 0;
+    transform: translateX(100%); 
 }
+
+
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {

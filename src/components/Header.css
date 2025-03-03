@@ -92,11 +92,23 @@
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: none; /* Disable transition effects */
   margin-top: -30px;
   position: relative;
   top: -30px;
 }
+
+.request-btn:hover {
+  background-color: #2e7dd2; /* Same as normal state */
+}
+
+.request-btn:focus, 
+.request-btn:active {
+  background-color: #2e7dd2 !important;
+  outline: none;
+  box-shadow: none;
+}
+
 /* Remove underline from links (menu items) */
 .menu-link {
   text-decoration: none; /* Removes the underline */

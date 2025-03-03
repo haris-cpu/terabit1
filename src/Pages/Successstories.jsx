@@ -10,8 +10,8 @@ const SuccessStories = () => {
     
       <div className="success-stories">
         <div className="heading" >
-          <h2 style={{fontFamily:'"Outfit", sans-serif',fontSize:'40px',width:'237',height:'45',fontWeight:'600',lineHeight:'45px',letterSpacing:'-2%',position:'relative',bottom:'70px',left:'350px'}}>Success Stories</h2>
-          <p style={{fontFamily:'Proxima Nova, sans-serif',fontWeight:'400',fontSize:'16px',lineHeight:'24px',position:'relative',bottom:'70px',left:'350px'}}>
+          <h2 style={{fontFamily:'"Outfit", sans-serif',fontSize:'40px',width:'237',height:'45',fontWeight:'600',lineHeight:'45px',letterSpacing:'-2%',position:'relative',bottom:'70px',left:'30px'}}>Success Stories</h2>
+          <p style={{fontFamily:'Proxima Nova, sans-serif',fontWeight:'400',fontSize:'16px',lineHeight:'24px',position:'relative',bottom:'70px',left:'30px'}}>
             Our comprehensive range of expertise empowers businesses to seize new
             opportunities and achieve remarkable results.
           </p>

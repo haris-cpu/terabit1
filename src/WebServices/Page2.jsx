@@ -1,21 +1,28 @@
 import React, { useState, useEffect } from "react";
 import "./Page2.css";
 
+const images = [  // ✅ Move outside the component
+  "/webimg/tv1.png",
+  "/webimg/tv2.png",
+  "/webimg/tv3.png"
+];
+
 const WebAppServices = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [
-    "/webimg/tv1.png",
-    "/webimg/tv2.png",
-    "/webimg/tv3.png"
-  ];
 
   useEffect(() => {
+    // ✅ Preload images only once
+    images.forEach(img => {
+      const image = new Image();
+      image.src = img;
+    });
+
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 1500);
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []);  // ✅ Dependency array is now constant
 
   return (
     <section className="web-services">
@@ -52,6 +59,7 @@ const WebAppServices = () => {
               <p className="web-service-text">Develop secure and scalable online stores with seamless user experience.</p>
             </div>
           </div>
+
           <div className="web-service-item">
             <span className="web-service-icon"><img src="/webimg/p23.png" alt="W3" /></span>
             <div>
@@ -68,7 +76,7 @@ const WebAppServices = () => {
             key={index}
             src={img}
             alt={`Web Mockup ${index + 1}`}
-            className={`web-mockup ${index === currentIndex ? "visible" : "hidden"}`}
+            className={`web-mockup ${index === currentIndex ? "active" : "inactive"}`}
           />
         ))}
       </div>
