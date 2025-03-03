@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap');
+
+
 .consultations-container {
   text-align: center;
   padding: 40px 20px;
@@ -37,43 +40,43 @@
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  width: 330px;
+  width: 365px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  height: '401px';
 }
 
 .consultation-image {
   width: 100%;
+  height: 265px;
   display: block;
   border-radius: 0 0 10px 10px;
 
   width: 397.0469665527344;
   height: 401;
 }
-.haris {
-  font-family: Outfit;
-  font-weight: 600;
-  font-size: 25.01px;
-  line-height: 31.51px;
-  letter-spacing: 0%;
-}
+
 .consultation-content {
   padding: 15px;
 }
 
-.consultation-content h3 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
+
 
 .target-text {
-  font-size: 14px;
-  color: #222020;
+ font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color:  #131313;
+    position: relative;
+    top: 1.5px;
+    opacity: 69%;
+    
 }
 
 .flag-icon {
-  width: 18px;
-  margin-right: 5px;
+  width: 23px;
+  margin-right: 13px;
   vertical-align: middle;
 }

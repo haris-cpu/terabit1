@@ -28,10 +28,21 @@ const Consultations = () => {
           <article key={index} className="consultation-card">
             <img src={consult.thumbnail} alt="Consultation Thumbnail" className="consultation-image" />
             <div className="consultation-content">
-              <h3  className="haris">{consult.title }</h3>
-              <p className="target-text">
-                <strong style={{position:'relative',bottom:'10px'}}>Target Audience</strong> <br />
-                <img src="/Consultationimages/flag.png" alt="USA Flag" className="flag-icon" /> {consult.target}
+              <h3  style={{
+  fontFamily: "Outfit, sans-serif", 
+  fontWeight: 600, 
+  fontSize: "25.01px", 
+  lineHeight: "31.51px", 
+  letterSpacing: "0%",
+  height:'18px',
+  width:'311px',
+  position:'relative',
+  bottom:'15px'
+}}>{consult.title }</h3>
+              <p >
+                <strong style={{position:'relative',bottom:'10px', fontFamily: "Proxima Nova, sans-serif",fontWeight:'700',fontSize:'16.67px',lineHeight:'27.1px',letterSpacing:'0%',width:"124px",height:"11px",color:'#424242'}}>Target Audience</strong> <br />
+                <img src="/Consultationimages/flag.png" alt="USA Flag" className="flag-icon" />
+                <span className="target-text">{consult.target}</span>
               </p>
             </div>
           </article>

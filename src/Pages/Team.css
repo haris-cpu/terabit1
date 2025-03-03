@@ -48,8 +48,8 @@ border-width: 1px;
 }
 
 .profile-image {
-width: 290.3818359375px;
-height: 350.0347595214844px;
+width: 332.1px;
+height: 362.0347595214844px;
 left: 65.62px;
 
 }
@@ -84,51 +84,48 @@ letter-spacing: -1%;
 }
 .text-content {
   text-align: left;
+  margin-top: 90px;
   
 }
 
 .stats {
   display: flex;
   justify-content: space-between;
- 
+  align-items: center;
   padding-top: 20px;
-  width: 582.7813720703125;
-height: 51.05717086791992;
-gap: 40.19px;
-
-
+  width: 600px; /* Adjust width as needed */
 }
 
 .stat-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  position: relative;
-  bottom: 25px;
-  width: 170.55267333984375;
-height: 51.05717086791992;
-gap: 8.69px;
-
-  
+  gap: 12px;
 }
 
-
 .stat-icon {
-  width: 45px;
-  height: 45px;
+  width: 40px; /* Adjust based on icon size */
+  height: 40px;
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .stat-title {
   font-weight: bold;
-  position: relative;
-  top: 10px;
+  font-size: 14px;
+  color: #000; /* Adjust color if needed */
+  margin: 0;
 }
 
 .stat-value {
   color: gray;
-  position: relative;
-  bottom: 5px;
+  font-size: 12px;
+  margin: 0;
 }
+
 
 
 
@@ -142,39 +139,60 @@ top: 82px;
 left: 71px;
 
 }
-
 .tabs {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
-  border: 0.25px solid rgba(97, 93, 93, 0.3); /* ✅ Adds a black border */
-   border-radius: 20px;
+  background: #f8f9fc; /* Light background */
+  border-radius: 30px; /* Smooth round edges */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  padding: 5px 18px;
 
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scrollbar-width: none; /* Hides the scrollbar */
+  -ms-overflow-style: none; /* For Internet Explorer/Edge */
 }
-.hidden-intern {
-  display: none;
+.tabs::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Webkit browsers */
 }
-
-
-
+/* Styling for each tab button */
 .tabs button {
-  padding: 16px 16px;
+  position: relative; /* Ensures ::after is positioned correctly */
+  padding: 14px 27px;
   border: none;
   cursor: pointer;
   font-size: 15px;
-  background: none; /* ✅ Removes background color */
-  color: black; /* ✅ Sets text color to black */
+  background: none;
+  color: black;
   border-radius: 5px;
-   
-  
+  font-weight: 500;
 }
 
-.tabs button.active {
-  background: none; /* ✅ Removes background color for active button */
-  color: blue; /* ✅ Ensures active button text is also black */
-  font-weight: bold; /* ✅ Optionally make it bold for emphasis */
+/* Add a vertical separator line after each tab */
+.tabs button::after {
+  content: "";
+  position: absolute;
+  right: -8px; /* Adjusts spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 30px;
+  background-color: #EAECF0; /* Light gray separator line */
 }
+
+/* Remove the separator from the last tab */
+.tabs button:last-child::after {
+  display: none;
+}
+
+/* Active tab styling */
+.tabs button.active {
+  color: #008df3; /* Highlights active tab */
+  font-weight: bold;
+}
+
 
 
 /* Team Members Grid */
@@ -219,9 +237,15 @@ left: 71px;
 }
 
 .role {
-  font-size: 12px;
-  color: #555;
-}
+  font-family: 'Objective', sans-serif; /* Ensure you have the font imported */
+  font-weight: 400;
+  font-size: 9.82px;
+  line-height: 13.53px;
+  letter-spacing: -0.01em; /* -1% is equal to -0.01em */
+  height: 7px;
+ 
+  color: #3C3737;
+} 
 
 /* See All Button */
 .see-all {
@@ -234,8 +258,6 @@ left: 71px;
   border: none;
   text-decoration: none;
   padding-left: 450px;
-  
-  
   
 
 }

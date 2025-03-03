@@ -65,16 +65,19 @@ const TeamProfile = () => {
   }, [showOverlay, selectedCategory]);
 
   const handleScrollRight = () => {
-    if (scrollIndex < categories.length - 3) {
-      setScrollIndex(scrollIndex + 1);
+    const tabsContainer = document.querySelector(".tabs");
+    if (tabsContainer) {
+      tabsContainer.scrollBy({ left: 100, behavior: "smooth" });
     }
   };
-
+  
   const handleScrollLeft = () => {
-    if (scrollIndex > 0) {
-      setScrollIndex(scrollIndex - 1);
+    const tabsContainer = document.querySelector(".tabs");
+    if (tabsContainer) {
+      tabsContainer.scrollBy({ left: -139, behavior: "smooth" });
     }
   };
+  
 
   
 
@@ -101,9 +104,9 @@ const TeamProfile = () => {
             </div>
           </div>
           <div className="stat-item">
-            <img src="/images/Vector.png" alt="Fiverr" className="stat-icon" />
+            <img src="/images/f.png" alt="Fiverr" className="stat-icon" style={{width:'55px'}} />
             <div>
-              <p className="stat-value">1800+ Orders Completed</p>
+              <p className="stat-value" style={{position:'relative',top:'10px'}}>1800+ Orders Completed</p>
             </div>
           </div>
           <div className="stat-item">
@@ -119,7 +122,7 @@ const TeamProfile = () => {
       <div className="right-section">
         <div className="tabs">
           <span 
-            style={{ paddingTop: '4px', color: '#007BFF', fontWeight: 'bold', fontSize: '24px', cursor: 'pointer' }} 
+            style={{ paddingTop: '8px', color: '#ECECEC', fontWeight: 'bold', fontSize: '24px', cursor: 'pointer' }} 
             onClick={handleScrollLeft}
           >
             &lt;
@@ -153,7 +156,7 @@ const TeamProfile = () => {
           ))}
         </div>
 
-        <button className="see-all" onClick={handleShowAll}>
+        <button className="see-all" onClick={handleShowAll}  >
           Show All →
         </button>
       </div>

@@ -11,14 +11,17 @@
 
 .core-tech-title {
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 700;
+  color: #1d2939;
   font-family: "Outfit", sans-serif;
   position: relative;
   top: 50px;
+  letter-spacing: -2%;
+  line-height: 53.5px;
 }
 
 .core-tech-description {
-  color: gray;
+  color: #1d2939;
   max-width: 600px;
   font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
@@ -31,47 +34,113 @@
 .core-tech-tabs {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap; /* Ensure buttons also stay row-wise */
+  align-items: center;
+  background: #f8f9fc; /* Light background */
+  border-radius: 30px; /* Smooth round edges */
+  padding: 8px;
+  gap: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 45PX;
 }
 
 .core-tech-tab {
-  padding: 10px 20px;
+  position: relative;
   border: none;
-  background: #f1f1f1;
+  background: transparent !important;
+  font-size: 18px;
+  color: #1d2939;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 12px 20px;
+  transition: color 0.3s ease;
+  outline: none;
+  min-width: 110px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 1px;
 }
 
+.core-tech-tab::after {
+  content: "";
+  position: absolute;
+  right: -5px; /* Moves the line slightly to the right */
+  top: 50%;
+ 
+  transform: translateY(-50%);
+  width: 0.1px; /* Makes the line very thin */
+  height: 30px; /* Keeps the line length */
+  background-color: #EAECF0; /* Line color */
+}
+
+/* Remove the line from the last icon */
+.core-tech-tab:last-child::after {
+  display: none;
+}
+
+
+/* On hover, only change text color */
 .core-tech-tab:hover {
-  background: blue;
-  color: white;
+  color: #007bff; 
+  background: transparent !important;
 }
 
-.core-tech-active {
-  background: blue;
-  color: white;
+/* When clicked (active), change text color only */
+.core-tech-tab.active {
+  color: #007bff;
+  font-weight: bold;
+  background: transparent !important;
 }
 
-/* ✅ Ensuring Technologies Appear in Rows */
+.core-tech-tab:disabled {
+ 
+  cursor: not-allowed;
+}
+
+
+
 .core-tech-icons-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Row-wise layout */
-  gap: 20px;
-  justify-content: center;
-  max-width: 800px;
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping */
+ 
+  overflow-y: hidden;
+  gap: 13px;
   padding: 10px;
+  max-width: 100%;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  margin-top: 30px;
+  
 }
 
+
+
+
+/* Ensure each card has a fixed width */
 .core-tech-card {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  min-width: 103px;
+  width: 100px; /* Ensures uniform width */
+  min-width: 110px; /* Prevent shrinking */
 }
+
+/* Adjust icon size */
+.core-tech-logo {
+  width: 50px;
+  height: 50px;
+}
+
+
+/* Hide the scrollbar for a cleaner look */
+.core-tech-icons-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 
 .core-tech-logo {
   width: 50px;
