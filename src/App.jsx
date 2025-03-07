@@ -159,6 +159,16 @@ function App() {
 />
 
 
+<Route
+          path="/ui-ux-design"
+          element={
+            <Layout>
+              <WebAppSection/>
+            </Layout>
+          }
+        />
+
+
       </Routes>
 
    
